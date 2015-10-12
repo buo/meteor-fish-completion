@@ -76,6 +76,7 @@ complete -c meteor -n '__fish_meteor_needs_command' -a list -d "List the package
 
 # add-platform
 complete -c meteor -n '__fish_meteor_needs_command' -a add-platform -d "Add a platform to this project."
+complete -c meteor -n '__fish_meteor_using_command add-platform' -f -a 'server browser android ios'
 
 # remove-platform
 complete -c meteor -n '__fish_meteor_needs_command' -a remove-platform -d "Remove a platform from this project."
