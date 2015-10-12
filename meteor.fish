@@ -119,6 +119,9 @@ complete -c meteor -n '__fish_meteor_needs_command' -a logs -d "Show logs for sp
 
 # authorized
 complete -c meteor -n '__fish_meteor_needs_command' -a authorized -d "View or change authorized users and organizations for a site."
+complete -c meteor -n '__fish_meteor_using_command authorized' -l add    -d "Add an authorized user or organization"
+complete -c meteor -n '__fish_meteor_using_command authorized' -l remove -d "Remove an authorized user or organization"
+complete -c meteor -n '__fish_meteor_using_command authorized' -l list   -d "List authorized users and organizations (the default)"
 
 # claim
 complete -c meteor -n '__fish_meteor_needs_command' -a claim -d "Claim a site deployed with an old Meteor version."
