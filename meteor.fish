@@ -95,6 +95,7 @@ complete -c meteor -n '__fish_meteor_using_command build' -l allow-incompatible-
 
 # lint
 complete -c meteor -n '__fish_meteor_needs_command' -a lint -d "Build this project and run the linters printing all errors and warnings."
+complete -c meteor -n '__fish_meteor_using_command lint' -l allow-incompatible-update -d "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints."
 
 # shell
 complete -c meteor -n '__fish_meteor_needs_command' -a shell -d "Launch a Node REPL for interactively evaluating server-side code."
