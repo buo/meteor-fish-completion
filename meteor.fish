@@ -50,6 +50,10 @@ complete -c meteor -n '__fish_meteor_using_command debug'      -l test          
 
 # create
 complete -c meteor -n '__fish_meteor_needs_command' -a create -d "Create a new project."
+complete -c meteor -n '__fish_meteor_using_command create' -l package -d "Create a new meteor package instead of an app."
+complete -c meteor -n '__fish_meteor_using_command create' -l example -d "Example template to use."
+complete -c meteor -n '__fish_meteor_using_command create' -l list    -d "Show list of available examples."
+complete -c meteor -n '__fish_meteor_using_command create' -l release -d "Specify the release of Meteor to use."
 
 # update
 complete -c meteor -n '__fish_meteor_needs_command' -a update -d "Upgrade this project's dependencies to their latest versions."
