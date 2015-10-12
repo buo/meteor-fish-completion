@@ -139,6 +139,23 @@ complete -c meteor -n '__fish_meteor_needs_command' -a whoami -d "Prints the use
 
 # test-packages
 complete -c meteor -n '__fish_meteor_needs_command' -a test-packages -d "Test one or more packages."
+complete -c meteor -n '__fish_meteor_using_command test-packages' -s p -l port                      -d "Port to listen on (instead of the default 3000)."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l debug-port                -d "Specify a port to enable server-side debugging."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l mobile-server             -d "Location where mobile builds connect to the Meteor server."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l deploy                    -d "Optionally, specify a domain to deploy to, rather than running locally."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l production                -d "Simulate production mode."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l settings                  -d "Set optional data for Meteor.settings on the server."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l android                   -d "Run tests on the Android emulator."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l android-device            -d "Run tests on a connected Android device."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l ios                       -d "Run tests on the iOS simulator."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l ios-device                -d "Run tests on a connected iOS device."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l raw-logs                  -d "Run without parsing logs from stdout and stderr."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l settings                  -d "Set optional data for Meteor.settings on the server."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l test-app-path             -d "Set the directory in which to create a temporary app used for tests."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l velocity                  -d "[Experimental] Execute tests using phantomjs and exit."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l verbose                   -d "Print all output from builds logs."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l no-lint                   -d "Don't run linters used by the app on every rebuild."
+complete -c meteor -n '__fish_meteor_using_command test-packages'      -l release                   -d "Specify the release of Meteor to use."
 
 # admin
 complete -c meteor -n '__fish_meteor_needs_command' -a admin -d "Administrative commands."
