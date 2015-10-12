@@ -181,6 +181,9 @@ complete -c meteor -n '__fish_meteor_needs_command' -a publish-for-arch -d "Buil
 
 # search
 complete -c meteor -n '__fish_meteor_needs_command' -a search -d "Search through the package server database."
+complete -c meteor -n '__fish_meteor_using_command search' -l maintainer -d "filter by authorized maintainer"
+complete -c meteor -n '__fish_meteor_using_command search' -l show-all   -d "show all matches, even prereleases"
+complete -c meteor -n '__fish_meteor_using_command search' -l ejson      -d "show more detailed output in EJSON format"
 
 # show
 complete -c meteor -n '__fish_meteor_needs_command' -a show -d "Show detailed information about a release or package."
