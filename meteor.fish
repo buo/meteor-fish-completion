@@ -68,6 +68,8 @@ complete -c meteor -n '__fish_meteor_using_command add' -l allow-incompatible-up
 
 # remove
 complete -c meteor -n '__fish_meteor_needs_command' -a remove -d "Remove a package from this project."
+complete -c meteor -n '__fish_meteor_using_command remove' -l allow-incompatible-update -d "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints."
+# TODO list of the installed packages
 
 # list
 complete -c meteor -n '__fish_meteor_needs_command' -a list -d "List the packages explicitly used by your project."
