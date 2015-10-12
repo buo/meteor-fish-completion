@@ -36,6 +36,17 @@ complete -c meteor -n '__fish_meteor_using_command run'      -l test            
 
 # debug
 complete -c meteor -n '__fish_meteor_needs_command' -a debug -d "Run the project, but suspend the server process for debugging."
+complete -c meteor -n '__fish_meteor_using_command debug' -s p -l port                      -d "Port to listen on (instead of the default 3000)."
+complete -c meteor -n '__fish_meteor_using_command debug'      -l debug-port                -d "Specify a port to enable server-side debugging."
+complete -c meteor -n '__fish_meteor_using_command debug'      -l mobile-server             -d "Location where mobile builds connect to the Meteor server."
+complete -c meteor -n '__fish_meteor_using_command debug'      -l production                -d "Simulate production mode."
+complete -c meteor -n '__fish_meteor_using_command debug'      -l raw-logs                  -d "Run without parsing logs from stdout and stderr."
+complete -c meteor -n '__fish_meteor_using_command debug'      -l settings                  -d "Set optional data for Meteor.settings on the server."
+complete -c meteor -n '__fish_meteor_using_command debug'      -l release                   -d "Specify the release of Meteor to use."
+complete -c meteor -n '__fish_meteor_using_command debug'      -l verbose                   -d "Print all output from builds logs."
+complete -c meteor -n '__fish_meteor_using_command debug'      -l no-lint                   -d "Don't run linters used by the app on every rebuild."
+complete -c meteor -n '__fish_meteor_using_command debug'      -l allow-incompatible-update -d "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints."
+complete -c meteor -n '__fish_meteor_using_command debug'      -l test                      -d "[Experimental] Run Velocity tests using phantomjs and exit."
 
 # create
 complete -c meteor -n '__fish_meteor_needs_command' -a create -d "Create a new project."
