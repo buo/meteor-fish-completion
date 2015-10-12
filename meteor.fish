@@ -18,6 +18,21 @@ end
 
 # run
 complete -f -c meteor -n '__fish_meteor_needs_command' -a run -d "[default] Run this project in local development mode."
+complete -f -c meteor -n '__fish_meteor_using_command run' -a android        -d "Run on the Android emulator."
+complete -f -c meteor -n '__fish_meteor_using_command run' -a android-device -d "Run on a connected Android device."
+complete -f -c meteor -n '__fish_meteor_using_command run' -a ios            -d "Run on the iOS simulator."
+complete -f -c meteor -n '__fish_meteor_using_command run' -a ios-device     -d "Open Xcode with the iOS project for this app, where you can run your app on a connected iOS device."
+complete -f -c meteor -n '__fish_meteor_using_command run' -s p -l port                      -d "Port to listen on (instead of the default 3000)."
+complete -f -c meteor -n '__fish_meteor_using_command run'      -l debug-port                -d "Specify a port to enable server-side debugging."
+complete -f -c meteor -n '__fish_meteor_using_command run'      -l mobile-server             -d "Location where mobile builds connect to the Meteor server."
+complete -f -c meteor -n '__fish_meteor_using_command run'      -l production                -d "Simulate production mode."
+complete -f -c meteor -n '__fish_meteor_using_command run'      -l raw-logs                  -d "Run without parsing logs from stdout and stderr."
+complete -f -c meteor -n '__fish_meteor_using_command run'      -l settings                  -d "Set optional data for Meteor.settings on the server."
+complete -f -c meteor -n '__fish_meteor_using_command run'      -l release                   -d "Specify the release of Meteor to use."
+complete -f -c meteor -n '__fish_meteor_using_command run'      -l verbose                   -d "Print all output from builds logs."
+complete -f -c meteor -n '__fish_meteor_using_command run'      -l no-lint                   -d "Don't run linters used by the app on every rebuild."
+complete -f -c meteor -n '__fish_meteor_using_command run'      -l allow-incompatible-update -d "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints."
+complete -f -c meteor -n '__fish_meteor_using_command run'      -l test                      -d "[Experimental] Run Velocity tests using phantomjs and exit."
 
 # debug
 complete -f -c meteor -n '__fish_meteor_needs_command' -a debug -d "Run the project, but suspend the server process for debugging."
