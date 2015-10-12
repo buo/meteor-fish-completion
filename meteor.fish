@@ -167,6 +167,7 @@ complete -c meteor -n '__fish_meteor_needs_command' -a list-sites -d "List sites
 
 # publish-release
 complete -c meteor -n '__fish_meteor_needs_command' -a publish-release -d "Publish a new meteor release to the package server."
+complete -c meteor -n '__fish_meteor_using_command publish-release' -l create-track -d "Publish a new release track."
 
 # publish
 complete -c meteor -n '__fish_meteor_needs_command' -a publish -d "Publish a new version of a package to the package server."
