@@ -80,6 +80,7 @@ complete -c meteor -n '__fish_meteor_using_command add-platform' -f -a 'server b
 
 # remove-platform
 complete -c meteor -n '__fish_meteor_needs_command' -a remove-platform -d "Remove a platform from this project."
+# TODO list of the added platforms
 
 # list-platforms
 complete -c meteor -n '__fish_meteor_needs_command' -a list-platforms -d "List the platforms added to your project."
