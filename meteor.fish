@@ -187,6 +187,8 @@ complete -c meteor -n '__fish_meteor_using_command search' -l ejson      -d "sho
 
 # show
 complete -c meteor -n '__fish_meteor_needs_command' -a show -d "Show detailed information about a release or package."
+complete -c meteor -n '__fish_meteor_using_command show' -l ejson      -d "show more detailed output in EJSON format"
+complete -c meteor -n '__fish_meteor_using_command show' -l show-all   -d "show hidden versions of packages and releases"
 
 # help
 complete -c meteor -n '__fish_meteor_needs_command' -a help -d "Display help"
