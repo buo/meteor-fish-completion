@@ -57,6 +57,10 @@ complete -c meteor -n '__fish_meteor_using_command create' -l release -d "Specif
 
 # update
 complete -c meteor -n '__fish_meteor_needs_command' -a update -d "Upgrade this project's dependencies to their latest versions."
+complete -c meteor -n '__fish_meteor_using_command update' -l packages-only             -d "Update the package versions only. Do not update the release."
+complete -c meteor -n '__fish_meteor_using_command update' -l patch                     -d "Update the release to a patch release only."
+complete -c meteor -n '__fish_meteor_using_command update' -l release                   -d "Update to a specific release of meteor."
+complete -c meteor -n '__fish_meteor_using_command update' -l allow-incompatible-update -d "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints."
 
 # add
 complete -c meteor -n '__fish_meteor_needs_command' -a add -d "Add a package to this project."
