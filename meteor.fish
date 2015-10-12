@@ -171,6 +171,10 @@ complete -c meteor -n '__fish_meteor_using_command publish-release' -l create-tr
 
 # publish
 complete -c meteor -n '__fish_meteor_needs_command' -a publish -d "Publish a new version of a package to the package server."
+complete -c meteor -n '__fish_meteor_using_command publish' -l create                    -d "Publish a new package."
+complete -c meteor -n '__fish_meteor_using_command publish' -l update                    -d "Change the metadata of a previously published version."
+complete -c meteor -n '__fish_meteor_using_command publish' -l allow-incompatible-update -d "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints."
+complete -c meteor -n '__fish_meteor_using_command publish' -l no-lint                   -d "Don't run linters on the published package and its local dependencies before publishing."
 
 # publish-for-arch
 complete -c meteor -n '__fish_meteor_needs_command' -a publish-for-arch -d "Builds an already-published package for a new platform."
