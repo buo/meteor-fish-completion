@@ -159,6 +159,8 @@ complete -c meteor -n '__fish_meteor_using_command test-packages'      -l releas
 
 # admin
 complete -c meteor -n '__fish_meteor_needs_command' -a admin -d "Administrative commands."
+complete -c meteor -n '__fish_meteor_using_command admin' -f -a 'maintainers recommend-release change-homepage list-organizations members get-machine'
+# TODO admin sub-command options
 
 # list-sites
 complete -c meteor -n '__fish_meteor_needs_command' -a list-sites -d "List sites for which you are authorized."
