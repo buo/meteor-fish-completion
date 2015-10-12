@@ -128,6 +128,7 @@ complete -c meteor -n '__fish_meteor_needs_command' -a claim -d "Claim a site de
 
 # login
 complete -c meteor -n '__fish_meteor_needs_command' -a login -d "Log in to your Meteor developer account."
+complete -c meteor -n '__fish_meteor_using_command login' -l email -d "Log in by email address rather than by username"
 
 # logout
 complete -c meteor -n '__fish_meteor_needs_command' -a logout -d "Log out of your Meteor developer account."
