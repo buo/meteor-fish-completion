@@ -86,6 +86,12 @@ complete -c meteor -n '__fish_meteor_needs_command' -a list-platforms -d "List t
 
 # build
 complete -c meteor -n '__fish_meteor_needs_command' -a build -d "Build this project for all platforms."
+complete -c meteor -n '__fish_meteor_using_command build' -l debug                     -d "Build in debug mode (don't minify, etc)."
+complete -c meteor -n '__fish_meteor_using_command build' -l directory                 -d "Output a directory (rather than a tarball) for the application server bundle. If the output location exists, it will be recursively deleted first."
+complete -c meteor -n '__fish_meteor_using_command build' -l mobile-settings           -d "Set optional data for the initial value of Meteor.settings in your mobile application."
+complete -c meteor -n '__fish_meteor_using_command build' -l server                    -d "Location where mobile builds connect to the Meteor server."
+complete -c meteor -n '__fish_meteor_using_command build' -l architecture -xa 'os.osx.x86_64 os.linux.x86_64 os.linux.x86_32' -d "Builds the server for a different architecture than your developer machine's architecture."
+complete -c meteor -n '__fish_meteor_using_command build' -l allow-incompatible-update -d "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints."
 
 # lint
 complete -c meteor -n '__fish_meteor_needs_command' -a lint -d "Build this project and run the linters printing all errors and warnings."
