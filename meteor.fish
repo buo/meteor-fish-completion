@@ -193,3 +193,7 @@ complete -c meteor -n '__fish_meteor_using_command show' -l show-all   -d "show 
 # help
 complete -c meteor -n '__fish_meteor_needs_command' -a help -d "Display help"
 complete -c meteor -n '__fish_meteor_using_command help' -f -a 'run debug create update add remove list add-platform remove-platform list-platforms build lint shell mongo reset deploy logs authorized claim login logout whoami test-packages admin list-sites publish-release publish publish-for-arch search show'
+
+# other options
+complete -c meteor -l version -d "Show the version number"
+complete -c meteor -l arch    -d "Show the architecture"
