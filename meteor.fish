@@ -109,6 +109,10 @@ complete -c meteor -n '__fish_meteor_needs_command' -a reset -d "Reset the proje
 
 # deploy
 complete -c meteor -n '__fish_meteor_needs_command' -a deploy -d "Deploy this project to Meteor."
+complete -c meteor -n '__fish_meteor_using_command deploy' -s D -l delete                    -d "Permanently delete this deployment"
+complete -c meteor -n '__fish_meteor_using_command deploy'      -l debug                     -d "Deploy in debug mode (don't minify, etc)"
+complete -c meteor -n '__fish_meteor_using_command deploy'      -l settings                  -d "Set optional data for Meteor.settings"
+complete -c meteor -n '__fish_meteor_using_command deploy'      -l allow-incompatible-update -d "Allow packages in your project to be upgraded or downgraded to versions that are potentially incompatible with the current versions, if required to satisfy all package version constraints."
 
 # logs
 complete -c meteor -n '__fish_meteor_needs_command' -a logs -d "Show logs for specified site."
