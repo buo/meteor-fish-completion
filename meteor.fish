@@ -77,9 +77,6 @@ complete -c meteor -n '__fish_meteor_needs_command' -a list -d "List the package
 # add-platform
 complete -c meteor -n '__fish_meteor_needs_command' -a add-platform -d "Add a platform to this project."
 
-# install-sdk
-complete -c meteor -n '__fish_meteor_needs_command' -a install-sdk  -d "Installs SDKs for a platform."
-
 # remove-platform
 complete -c meteor -n '__fish_meteor_needs_command' -a remove-platform -d "Remove a platform from this project."
 
