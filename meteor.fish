@@ -102,6 +102,7 @@ complete -c meteor -n '__fish_meteor_needs_command' -a shell -d "Launch a Node R
 
 # mongo
 complete -c meteor -n '__fish_meteor_needs_command' -a mongo -d "Connect to the Mongo database for the specified site."
+complete -c meteor -n '__fish_meteor_using_command mongo' -s U -l url -d "Return a URL suitable for an external program to connect to the database."
 
 # reset
 complete -c meteor -n '__fish_meteor_needs_command' -a reset -d "Reset the project state. Erases the local database."
